@@ -1,0 +1,47 @@
+.banner {
+  display: flex;
+  padding: 32px 16px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  align-self: stretch;
+  background-color: var(--azul);
+  text-align: center;
+}
+
+.banner__titulo{
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.banner__button{
+  border-radius: 8px;
+background: var(--salmo, #F05454);
+color: var(--branco);
+font-family: var(--fonte-principal);
+font-size: 16px;
+font-weight: 700;
+text-transform: uppercase;
+padding: 12px 16px;
+border: none;
+}
+
+.banner-dados {
+  align-items: flex-start;
+}
+
+.banner__descricao-dados {
+  font-size: 24px;
+  text-align: left;
+}
+
+@media screen and (min-width:428px) {
+  .banner-dados {
+    align-items: center;
+  }
+
+  .banner__descricao-dados {
+    text-align: center;
+  }
+}

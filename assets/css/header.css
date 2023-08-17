@@ -1,0 +1,30 @@
+.cabecalho nav {
+  background-color: var(--azul-acinzentado-escuro);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 19px;
+}
+
+.cabecalho__bloco-logo {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.cabecalho__titulo {
+  display: none;
+}
+
+@media screen and (min-width: 428px) {
+  .cabecalho {
+    flex-direction: row;
+  }
+  .cabecalho__titulo {
+    display: block;
+    color: #fff;
+    font-family: Anek Tamil;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+}
