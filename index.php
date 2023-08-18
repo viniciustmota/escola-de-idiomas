@@ -21,21 +21,18 @@
             <div class="cabecalho__bloco-logo">
                 <img src="./assets/img/hamburguer.svg" alt="icone de hamburguer" class="cabecalho__menu-hamburguer">
                 <ul class="lista-menu">
-                    <li class="lista-menu__titulo">Categorias</li>
+                    <li class="lista-menu__titulo">Cursos</li>
                     <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Programação</a>
+                        <a href="#" class="lista-menu__link">Ingles</a>
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Front-end</a>
+                        <a href="#" class="lista-menu__link">Espanhol</a>
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Infraestrutura</a>
+                        <a href="#" class="lista-menu__link">Italiano</a>
                     </li>
                     <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Business</a>
-                    </li>
-                    <li class="lista-menu__item">
-                        <a href="#" class="lista-menu__link">Design & UX</a>
+                        <a href="#" class="lista-menu__link">Alemão</a>
                     </li>
                 </ul>
                 <img src="./assets/img/logo.svg" alt="Logo Polimota" class="cabecalho__logo">
