@@ -16,15 +16,54 @@
   display: none;
 }
 
+.lista-menu {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 96px;
+  width: 60vw;
+}
+
+.ativado{
+  display: block;
+}
+
+.nav ~ .lista-menu {
+  display: block;
+  position: absolute;
+}
+
+.lista-menu__titulo,
+.lista-menu__item {
+  padding: 1em;
+  background-color: var(--azul-acinzentado-escuro);
+}
+
+.lista-menu__titulo {
+  color: var(--salmao);
+  font-weight: 700;
+}
+
+.lista-menu__link {
+  color: var(--branco);
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+
 @media screen and (min-width: 428px) {
   .cabecalho {
     flex-direction: row;
   }
   .cabecalho__titulo {
     display: block;
-    color: #fff;
-    font-family: Anek Tamil;
+    color: var(--branco);
+    font-family: var(--fonte-nome-empresa);
     font-size: 40px;
     text-transform: uppercase;
+  }
+
+  .cabecalho__menu-hamburguer, .lista-menu{
+    display: none;
   }
 }

@@ -3,11 +3,13 @@
   padding: 16px 0;
   justify-content: center;
   align-items: center;
-  background-color: var(--azul-bem-escuro);
+  background-color: var(--azul-acinzentado-escuro);
 }
 
 .rodape__texto {
   line-height: normal;
+  font-weight: 700;
+  font-family: var(--fonte-secundaria);
 }
 
 .rodape__topicos {
