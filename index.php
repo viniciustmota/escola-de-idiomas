@@ -50,7 +50,7 @@
         <p class="banner__descricao">
             Aqui, você tem liberdade para aprender uma nova língua quando e onde quiser
         </p>
-        <input type="button" class="banner__button" value="Quero aprender um novo idioma">
+        <a href="./cadastro.php" class="banner__button">Quero aprender um novo idioma</a>
     </section>
 
     <!-- Swiper -->
@@ -86,11 +86,6 @@
             <p class="vantagens__descricao">A plataforma tem uma tecnologia que consegue entender suas maiores dificuldades durante o curso, direcionando o seu treino para aquilo que você mais precisa.</p>
         </div>
     </section>
-
-
-
-
-
 
     <footer class="rodape">
         <p class="rodape__texto">Grupo Mota</p>

@@ -8,22 +8,23 @@
   gap: 8px;
 }
 
-.banner__titulo{
-    font-size: 32px;
-    font-weight: 700;
+.banner__titulo {
+  font-size: 32px;
+  font-weight: 700;
 }
 
-.banner__button{
+.banner__button {
   margin-top: 16px;
   border-radius: 8px;
-background: var(--salmo, #F05454);
-color: var(--branco);
-font-family: var(--fonte-principal);
-font-size: 16px;
-font-weight: 700;
-text-transform: uppercase;
-padding: 12px 16px;
-border: none;
+  background: var(--salmo, #f05454);
+  color: var(--branco);
+  font-family: var(--fonte-principal);
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 12px 16px;
+  border: none;
+  text-decoration: none;
 }
 
 .banner-dados {
@@ -35,7 +36,7 @@ border: none;
   text-align: left;
 }
 
-@media screen and (min-width:428px) {
+@media screen and (min-width: 428px) {
   .banner-dados {
     align-items: center;
   }

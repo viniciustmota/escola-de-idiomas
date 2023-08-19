@@ -6,7 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dados</title>
+
+    <!-- CSS -->
     <link rel="stylesheet" href="./assets/css/estilos.css">
+
+    <!-- JS -->
+    <script src="./assets/js/script.js" defer></script>
 </head>
 
 <body>
@@ -14,43 +19,70 @@
     $nome = $_GET['nome'];
     $idade = $_GET['idade'];
     $sexo = $_GET['sexo'];
-    $esporte = $_GET['esporte'];
-    $tempo = $_GET['tempo'];
-    $alimentacao = $_GET['alimentacao'];
-    $sono = $_GET['sono'];
-    $campeonatos = $_GET['campeonatos'];
+    $email = $_GET['email'];
+    $telefone = $_GET['telefone'];
+    $cpf = $_GET['cpf'];
+    $curso = $_GET['cursos'];
+    $nivel = $_GET['Nivel'];
+    $deficiencia = $_GET['deficiencia'];
+    $rg = $_GET['rg'];
     ?>
 
-    <header class="cabecalho">
-        <img src="./assets/img/Logo.svg" alt="Logo Projeto Esporte todos os dias" class="cabecalho__logo">
-        <p class="cabecalho__titulo">Projeto Esporte Todos os dias</p>
+<header class="cabecalho">
+        <nav>
+            <div class="cabecalho__bloco-logo">
+                <img src="./assets/img/hamburguer.svg" alt="icone de hamburguer" class="cabecalho__menu-hamburguer">
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Cursos</li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Ingles</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Espanhol</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Italiano</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Alemão</a>
+                    </li>
+                </ul>
+                <img src="./assets/img/logo.svg" alt="Logo Polimota" class="cabecalho__logo">
+                <p class="cabecalho__titulo">POLIMOTA</p>
+            </div>
+            <img src="./assets/img/user.svg" alt="" srcset="">
+        </nav>
+
     </header>
 
     <section class="banner banner-dados">
-        <h1 class="banner__titulo">
-            <?php echo ("Que legal $nome!") ?>
-        </h1>
-        <p class="banner__descricao banner__descricao-dados">
-            <?php echo ("Você pratica $esporte,
-há $tempo anos") ?>
+    <p class="banner__descricao banner__descricao-dados">
+            <?php echo ("Olá, $nome") ?>
         </p>
+        <h1 class="banner__titulo">
+            <?php echo ("Confirme seus dados
+e comece os estudos") ?>
+        </h1>
     </section>
 
     <section class="dados">
-        <?php echo "<img class='dados__img' src='./assets/img/$esporte.jpg' \">";
+        <?php
         echo ("<div class='dados__div'>
-                    <h2 class='dados__titulo'>Dados sobre você</h2>
                     <ul class='dados__lista'>
-                        <li class='dados__item'>Gênero $sexo;</li>
-                        <li class='dados__item'>Tem $idade anos</li>
-                        <li class='dados__item'>Ja participou em $campeonatos campeonatos;</li>
-                        <li class='dados__item'>Se alimenta bem: $alimentacao;</li>
-                        <li class='dados__item'>Dorme $sono horas por dia;</li>
+                        <li class='dados__item'>Nome: <span>$nome</span></li>
+                        <li class='dados__item'>Idade: <span>$idade anos</span></li>
+                        <li class='dados__item'>Genêro: <span>$sexo</span></li>
+                        <li class='dados__item'>E-mail: <span>$email</span></li>
+                        <li class='dados__item'>Telefone: <span>$telefone</span></li>
+                        <li class='dados__item'>CPF: <span>$cpf</span></li>
+                        <li class='dados__item'>RG: <span>$rg</span></li>
+                        <li class='dados__item'>Curso: <span>$curso</span></li>
+                        <li class='dados__item'>Nível: <span>$nivel</span></li>
+                        <li class='dados__item'>Possui deficiência: <span>$deficiencia</span></li>      
                     </ul>
                 </div>
-    ");
-
-        ?>
+    ");?>
+    <button type="submit" class="dados__btn">confimar</button>
     </section>
 
     <footer class="rodape">

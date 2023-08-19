@@ -2,13 +2,11 @@
   display: flex;
   padding: 32px 16px;
   flex-direction: column;
-  align-items: center;
   gap: 24px;
   background-color: var(--azul-escuro);
 }
 
 .questionario__titulo {
-  color: var(--azul-claro);
   text-align: center;
   font-size: 32px;
   font-weight: 700;
@@ -18,16 +16,16 @@
   display: flex;
   flex-direction: column;
   gap: 8px;
+  font-family: var(--fonte-secundaria);
 }
 
 .questionario__label {
-  color: var(--azul-mais-claro);
   font-weight: 500;
 }
 
 .questionario__resposta {
   border-radius: 8px;
-  border: 2px solid var(--creme-forte);
+  border: 2px solid var(--salmao);
   background: var(--branco);
   padding: 4px 8px;
   margin-bottom: 8px;
@@ -39,7 +37,7 @@
   justify-content: center;
   align-items: center;
   border-radius: 8px;
-  background: var(--creme-forte);
+  background: var(--salmao);
   color: var(--branco);
   font-size: 24px;
   font-weight: 700;
@@ -47,25 +45,24 @@
 }
 
 @media screen and (min-width: 428px) {
-  .questionario__form{
+  .questionario__form {
     width: 60%;
   }
 
-  .questionario__grid{
+  .questionario__grid {
     width: 100%;
     display: flex;
     justify-content: center;
   }
-  
 }
 
-@media screen and (min-width:1728px) {
-  .questionario__form{
+@media screen and (min-width: 1728px) {
+  .questionario__form {
     width: 50%;
   }
 
-  .questionario__grid{
+  .questionario__grid {
     width: 80%;
-    gap: 32px  ;
+    gap: 32px;
   }
 }

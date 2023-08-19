@@ -11,13 +11,31 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
     <link rel="stylesheet" href="./assets/css/estilos.css">
 
+    <!-- JS -->
+    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/Rg.js" defer></script>
 </head>
 
 <body>
     <header class="cabecalho">
         <nav>
             <div class="cabecalho__bloco-logo">
-                <img src="./assets/img/hamburguer.svg" alt="icone de hamburguer">
+                <img src="./assets/img/hamburguer.svg" alt="icone de hamburguer" class="cabecalho__menu-hamburguer">
+                <ul class="lista-menu">
+                    <li class="lista-menu__titulo">Cursos</li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Ingles</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Espanhol</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Italiano</a>
+                    </li>
+                    <li class="lista-menu__item">
+                        <a href="#" class="lista-menu__link">Alemão</a>
+                    </li>
+                </ul>
                 <img src="./assets/img/logo.svg" alt="Logo Polimota" class="cabecalho__logo">
                 <p class="cabecalho__titulo">POLIMOTA</p>
             </div>
@@ -26,69 +44,65 @@
 
     </header>
 
-    <section class="banner">
-        <h1 class="banner__titulo">
-            Procurando aprender uma lingua nova?
-        </h1>
-        <p class="banner__descricao">
-            Aqui, você tem liberdade para aprender uma nova língua quando e onde quiser
-        </p>
-        <input type="button" class="banner__button" value="Quero aprender um novo idioma">
-    </section>
-
-    <!-- Swiper -->
-    <section class="carrossel">
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="./assets/img/EUA.svg" alt="Bandeira dos EUA"></div>
-                <div class="swiper-slide"><img src="./assets/img/Espanha.svg" alt="Bandeira da Espanha"></div>
-                <div class="swiper-slide"><img src="./assets/img/Italia.svg" alt="Bandeira da Italia"></div>
-                <div class="swiper-slide"><img src="./assets/img/Alemanha.svg" alt="Bandeira da Alemanha"></div>
-            </div>
-            <div class="swiper-pagination"></div>
-        </div>
-    </section>
-
     <section class="questionario">
-        <h2 class="questionario__titulo">Questionario</h2>
+        <h2 class="questionario__titulo">Conte um pouco sobre você</h2>
         <div class="questionario__grid">
             <form action="dados.php" method="get" class="questionario__form">
                 <label for="nome" class="questionario__label">Qual o seu nome?</label>
-                <input type="text" id="nome" name="nome" placeholder="digite seu nome" class="questionario__resposta" required>
+                <input type="text" id="nome" name="nome" placeholder="Digite seu nome" class="questionario__resposta" required>
 
                 <label for="idade" class="questionario__label">Qual a sua idade?</label>
-                <input type="number" id="idade" name="idade" placeholder="digite sua idade" class="questionario__resposta" required>
+                <input type="number" id="idade" name="idade" placeholder="Digite sua idade" class="questionario__resposta" required>
 
                 <label for="sexo" class="questionario__label">Qual o seu sexo?</label>
                 <div class="questionario__radiobtn">
                     <input type="radio" name="sexo" id="sexo-m" class="questionario__resposta" value="Masculino" required> <label for="sexo-m">Masculino</label>
                     <input type="radio" name="sexo" id="sexo-f" class="questionario__resposta" value="Feminino" required> <label for="sexo-f">Feminino</label>
                 </div>
-                <label for="esporte" class="questionario__label">Qual seu esporte favorito?</label>
-                <select name="esporte" id="" class="questionario__resposta">
-                    <option value="Atletismo">Atletismo</option>
+
+                <label for="email" class="questionario__label">Insira seu e-mail</label>
+                <input type="email" id="email" name="email" placeholder="Digite seu e-mail" class="questionario__resposta" required>
+
+                <label for="telefone" class="questionario__label">Insira seu telefone</label>
+                <input type="tel" id="telefone" name="telefone" placeholder="Digite seu telefone" class="questionario__resposta" required maxlength="15">
+
+                <label for="cpf" class="questionario__label">Insira seu CPF</label>
+                <input type="text" id="cpf" name="cpf" placeholder="Digite seu CPF" class="questionario__resposta" required maxlength="11">
+
+                <label for="rg" class="questionario__label">Insira seu RG</label>
+                <input type="text" id="rg" name="rg" placeholder="Digite seu RG" class="questionario__resposta" required maxlength="10">
+
+                <label for="cursos" class="questionario__label">Qual lingua você irá aprender?</label>
+                <select name="cursos" id="cursos" class="questionario__resposta">
+                    <option value="Ingles">Ingles</option>
+                    <option value="Espanhol">Espanhol</option>
+                    <option value="Italiano">Italiano</option>
+                    <option value="Alemão">Alemão</option>
                 </select>
 
-                <label for="tempo" class="questionario__label">Há quanto tempo você pratica?</label>
-                <input type="number" id="tempo" name="tempo" placeholder="digite quantos anos você pratica" class="questionario__resposta" required>
-
-                <label for="campeonatos" class="questionario__label">Quantas vezes participou de campeonatos?</label>
-                <input type="number" id="campeonatos" name="campeonatos" placeholder="Digite quantas vezes você participou" class="questionario__resposta" required>
-
-                <label for="alimentação" class="questionario__label">Você se alimenta bem?</label>
+                <label class="questionario__label">Nivel de conhecimento:</label>
                 <div class="questionario__radiobtn">
-                    <input type="radio" name="alimentacao" id="alimentacao-sim" class="questionario__resposta" value="Sim" required> <label for="alimentacao-sim">Sim</label>
-                    <input type="radio" name="alimentacao" id="alimentacao-nao" class="questionario__resposta" value="Não" required><label for="alimentacao-nao">Não</label>
+                    <input type="radio" name="Nivel" id="nivel-basico" class="questionario__resposta" value="Básico" required> <label for="nivel-basico">Básico</label>
+                    <input type="radio" name="Nivel" id="nivel-intermediario" class="questionario__resposta" value="Intermediario" required><label for="nivel-intermediario">Intermediario</label>
+                    <input type="radio" name="Nivel" id="nivel-avancado" class="questionario__resposta" value="Avançado" required><label for="nivel-avancado">Avançado</label>
                 </div>
 
-                <label for="sono" class="questionario__label">Você dorme quantas horas por dia?</label>
-                <input type="number" id="sono" name="sono" placeholder="Digite quantas horas você dorme por dia" class="questionario__resposta" required>
+                <label for="deficiencia" class="questionario__label">Possui alguma deficiencia?</label>
+                <select name="deficiencia" id="deficiencia" class="questionario__resposta">
+                    <option value="Não">Não</option>
+                    <option value="Autismo">Autismo</option>
+                    <option value="Auditiva">Auditiva</option>
+                    <option value="Visual">Visual</option>
+                    <option value="Mental">Mental</option>
+                    <option value="Multipla">Multipla</option>
+                    <option value="Física">Física</option>
+                </select>
 
                 <input type="submit" value="Enviar" class="questionario__btn"></input>
             </form>
-
         </div>
     </section>
+
     <footer class="rodape">
         <p class="rodape__texto">Grupo Mota</p>
         <section class="rodape__topicos">
