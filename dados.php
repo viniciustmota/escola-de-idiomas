@@ -28,7 +28,7 @@
     $rg = $_GET['rg'];
     ?>
 
-<header class="cabecalho">
+    <header class="cabecalho">
         <nav>
             <div class="cabecalho__bloco-logo">
                 <img src="./assets/img/hamburguer.svg" alt="icone de hamburguer" class="cabecalho__menu-hamburguer">
@@ -50,13 +50,18 @@
                 <img src="./assets/img/logo.svg" alt="Logo Polimota" class="cabecalho__logo">
                 <p class="cabecalho__titulo">POLIMOTA</p>
             </div>
-            <img src="./assets/img/user.svg" alt="" srcset="">
+            <ul class="cabecalho__lista">
+                <li class="cabecalho__item"><a href="#">Cursos</a></li>
+                <li class="cabecalho__item"><a href="#">Entrar</a></li>
+                <li class="cabecalho__btn"><a href="./cadastro.php">Quero me matricular</a></li>
+            </ul>
+            <img src="./assets/img/user.svg" alt="" srcset="" class="cabecalho__login">
         </nav>
 
     </header>
 
     <section class="banner banner-dados">
-    <p class="banner__descricao banner__descricao-dados">
+        <p class="banner__descricao banner__descricao-dados">
             <?php echo ("Olá, $nome") ?>
         </p>
         <h1 class="banner__titulo">
@@ -66,8 +71,9 @@ e comece os estudos") ?>
     </section>
 
     <section class="dados">
-        <?php
-        echo ("<div class='dados__div'>
+        <div class="dados__conteudo">
+            <?php
+            echo ("<div class='dados__div'>
                     <ul class='dados__lista'>
                         <li class='dados__item'>Nome: <span>$nome</span></li>
                         <li class='dados__item'>Idade: <span>$idade anos</span></li>
@@ -81,8 +87,10 @@ e comece os estudos") ?>
                         <li class='dados__item'>Possui deficiência: <span>$deficiencia</span></li>      
                     </ul>
                 </div>
-    ");?>
-    <button type="submit" class="dados__btn">confimar</button>
+                "); ?>
+            <button type="submit" class="dados__btn">confimar</button>
+        </div>
+        <img src="./assets/img/Globo.svg" alt="Imagem de um globo da terra" class="dados__img">
     </section>
 
     <footer class="rodape">

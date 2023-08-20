@@ -9,7 +9,7 @@
 
 .vantagens__card {
   display: flex;
-  width: 75%;
+  width: 282px;
   text-align: center;
   flex-direction: column;
   justify-content: center;
@@ -28,4 +28,21 @@
   font-family: var(--fonte-secundaria);
   font-style: normal;
   line-height: normal;
+}
+
+@media screen and (min-width:428px) {
+  .vantagens{
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .vantagens__card{
+    justify-content: flex-start;
+  }
+}
+
+@media screen and (min-width:1728px) {
+  .vantagens__card{
+    width: 100%;
+  }
 }

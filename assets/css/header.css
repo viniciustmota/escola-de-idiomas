@@ -4,6 +4,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 8px 19px;
+  flex-wrap: wrap;
 }
 
 .cabecalho__bloco-logo {
@@ -14,6 +15,7 @@
 
 .cabecalho__titulo {
   display: none;
+  font-family: var(--fonte-nome-empresa);
 }
 
 .lista-menu {
@@ -24,7 +26,7 @@
   width: 60vw;
 }
 
-.ativado{
+.ativado {
   display: block;
 }
 
@@ -50,6 +52,34 @@
   text-decoration: none;
 }
 
+.cabecalho__lista {
+  display: none;
+}
+
+.cabecalho__item a , .cabecalho__btn a{
+  color: var(--branco);
+  font-family: var(--fonte-principal);
+  font-style: normal;
+  line-height: normal;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.cabecalho__item a:hover{
+  color: var(--salmao);
+}
+
+.cabecalho__btn a {
+  border-radius: 8px;
+  border: 2px solid var(--salmao);
+  color: var(--salmao);
+  padding: 8px 16px;
+}
+
+.cabecalho__btn a:hover{
+  background: var(--salmao);
+  color: var(--branco);
+}
 
 @media screen and (min-width: 428px) {
   .cabecalho {
@@ -58,12 +88,21 @@
   .cabecalho__titulo {
     display: block;
     color: var(--branco);
-    font-family: var(--fonte-nome-empresa);
     font-size: 40px;
     text-transform: uppercase;
   }
+}
 
-  .cabecalho__menu-hamburguer, .lista-menu{
+@media screen and (min-width:720px) {
+    .cabecalho__menu-hamburguer,
+  .lista-menu,
+  .cabecalho__login {
     display: none;
+  }
+
+  .cabecalho__lista {
+    display: flex;
+    align-items: center;
+    gap: 16px;
   }
 }

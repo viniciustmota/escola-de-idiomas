@@ -7,7 +7,7 @@
 @import url(vantagens.css);
 @import url(header.css);
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
 
 * {
@@ -19,7 +19,7 @@
   --azul-claro:#86E5FF;
   --fonte-principal: "Inter";
   --fonte-secundaria: "Montserrat";
-  --fonte-nome-empresa: "'Anek Tamil', sans-serif";
+  --fonte-nome-empresa: "Anek Tamil";
 
 }
 

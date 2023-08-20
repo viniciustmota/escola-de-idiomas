@@ -13,7 +13,6 @@
 
     <!-- JS -->
     <script src="./assets/js/script.js" defer></script>
-    <script src="./assets/js/Rg.js" defer></script>
 </head>
 
 <body>
@@ -39,7 +38,12 @@
                 <img src="./assets/img/logo.svg" alt="Logo Polimota" class="cabecalho__logo">
                 <p class="cabecalho__titulo">POLIMOTA</p>
             </div>
-            <img src="./assets/img/user.svg" alt="" srcset="">
+            <ul class="cabecalho__lista">
+                <li class="cabecalho__item"><a href="#">Cursos</a></li>
+                <li class="cabecalho__item"><a href="#">Entrar</a></li>
+                <li class="cabecalho__btn"><a href="./cadastro.php">Quero me matricular</a></li>
+            </ul>
+            <img src="./assets/img/user.svg" alt="" srcset="" class="cabecalho__login">
         </nav>
 
     </header>
@@ -100,6 +104,8 @@
 
                 <input type="submit" value="Enviar" class="questionario__btn"></input>
             </form>
+
+            <img src="./assets/img/Homem aprendendo.svg" alt="Homem aprendendo ingles pela polimota" class="questionario__img">
         </div>
     </section>
 

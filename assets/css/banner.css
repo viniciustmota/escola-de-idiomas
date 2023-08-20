@@ -28,20 +28,17 @@
 }
 
 .banner-dados {
-  align-items: flex-start;
+  align-items: center;
 }
 
 .banner__descricao-dados {
   font-size: 24px;
   text-align: left;
+  text-align: center;
 }
 
 @media screen and (min-width: 428px) {
-  .banner-dados {
-    align-items: center;
-  }
-
-  .banner__descricao-dados {
-    text-align: center;
+  .banner__titulo{
+    width: 70%;
   }
 }

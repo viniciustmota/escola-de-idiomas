@@ -38,7 +38,12 @@
                 <img src="./assets/img/logo.svg" alt="Logo Polimota" class="cabecalho__logo">
                 <p class="cabecalho__titulo">POLIMOTA</p>
             </div>
-            <img src="./assets/img/user.svg" alt="" srcset="">
+            <ul class="cabecalho__lista">
+                <li class="cabecalho__item"><a href="#">Cursos</a></li>
+                <li class="cabecalho__item"><a href="#">Entrar</a></li>
+                <li class="cabecalho__btn"><a href="./cadastro.php">Quero me matricular</a></li>
+            </ul>
+            <img src="./assets/img/user.svg" alt="" srcset="" class="cabecalho__login">
         </nav>
 
     </header>
@@ -112,11 +117,36 @@
     <script>
         var swiper = new Swiper(".mySwiper", {
             loop: true,
-            slidesPerView: 2,
-            spaceBetween: 20,
+            slidesPerView: 1,
+            spaceBetween: 10,
             pagination: {
                 el: ".swiper-pagination",
                 clickable: true,
+            },
+            breakpoints: {
+                "@0.00": {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                },
+                "@1.00": {
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
+                "@2.496": {
+                    effect: "coverflow",
+                    grabCursor: true,
+                    centeredSlides: true,
+                    slidesPerView: "auto",
+                    coverflowEffect: {
+                        rotate: 50,
+                        stretch: 0,
+                        depth: 100,
+                        modifier: 1,
+                        slideShadows: true,
+                    },
+                    slidesPerView: 2,
+                    spaceBetween: 20,
+                },
             },
         });
     </script>
